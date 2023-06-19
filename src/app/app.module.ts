@@ -33,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { ComidaContatoComponent } from './contato/comida-contato/comida-contato.component';
 
 @NgModule({
 
@@ -44,7 +45,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
     EditContatoComponent,
 
-    ListContatoComponent
+    ListContatoComponent,
+     ComidaContatoComponent
 
   ],
 
