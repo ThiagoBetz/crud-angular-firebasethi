@@ -1,16 +1,63 @@
-<button type="button" class="btn btn-primary">Primary</button>
+<!-- Top navigation -->
 
-<button type="button" class="btn btn-secondary">Secondary</button>
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
 
-<button type="button" class="btn btn-success">Success</button>
+  <a class="navbar-brand px-3" routerLink="/list-contato">
 
-<button type="button" class="btn btn-danger">Danger</button>
+      Dashboard
 
-<button type="button" class="btn btn-warning">Warning</button>
+  </a>
 
-<button type="button" class="btn btn-info">Info</button>
+  <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
 
-<button type="button" class="btn btn-light">Light</button>
+    <span class="navbar-toggler-icon"></span>
 
-<button type="button" class="btn btn-dark">Dark</button>
-hkkkkkkkkkkk
+  </button>
+
+</header>
+
+<!-- Sidebar navigation -->
+
+<div class="container-fluid">
+
+  <div class="row flex-nowrap">
+
+    <nav id="sidebarMenu" class="col-md-2 d-md-block bg-dark sidebar collapse">
+
+        <ul class="nav flex-column min-vh-100">
+
+          <li class="nav-item">
+
+            <a class="nav-link" routerLink="/add-contato" routerLinkActive="active">
+
+              Adicionar Contato
+
+            </a>
+
+          </li>
+
+          <li class="nav-item">
+
+            <a class="nav-link active" routerLink="/list-contato" routerLinkActive="active">
+
+              Lista de Contatos
+
+            </a>
+
+          </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Main content -->
+
+    <main class="col-md-10">
+
+      <router-outlet></router-outlet>
+
+    </main>
+
+  </div>
+
+</div>
