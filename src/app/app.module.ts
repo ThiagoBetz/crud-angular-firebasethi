@@ -12,6 +12,9 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 import { environment } from '../environment';
+import { ListContatoComponent } from './contato/list-contato/list-contato.component';
+import { EditContatoComponent } from './contato/edit-contato/edit-contato.component';
+import { AddContatoComponent } from './contato/add-contato/add-contato.component';
 
 
 
@@ -19,7 +22,10 @@ import { environment } from '../environment';
 
   declarations: [
 
-    AppComponent
+    AppComponent,
+     ListContatoComponent,
+     EditContatoComponent,
+     AddContatoComponent
 
   ],
 
