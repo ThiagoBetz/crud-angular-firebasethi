@@ -1,4 +1,3 @@
-<p>list-contato works!</p>
 <!-- TOPO -->
 
 <div class="d-flex justify-content-between
@@ -7,9 +6,9 @@
 
             pt-3 pb-2 mb-3 border-bottom">
 
-  <h2 class="h2">Lista de Contatos</h2>
+  <h2 class="h2">Lista dos Times De Futebol</h2>
 
-  <a routerLink="/add-contato" class="btn btn-success" *ngIf="!listaVazia"> Adicionar Contato</a>
+  <a routerLink="/add-contato" class="btn btn-success" *ngIf="!listaVazia"> Adicionar Time</a>
 
 </div>
 
@@ -29,9 +28,9 @@
 
   <div class="text-center" *ngIf="listaVazia">
 
-    <p>Nenhum contato adicionado ainda</p>
+    <p>Nenhum Time adicionado ainda</p>
 
-    <a routerLink="/add-contato" class="btn btn-success"> Adicionar Contato</a>
+    <a routerLink="/add-contato" class="btn btn-success"> Adicionar Time</a>
 
   </div>
 
@@ -47,11 +46,11 @@
 
           <th scope="col">#</th>
 
-          <th scope="col">Nome</th>
+          <th scope="col">Nome Do Time</th>
 
-          <th scope="col">Idade</th>
+          <th scope="col">Idade Do Time</th>
 
-          <th scope="col">Telefone</th>
+          <th scope="col">Valor Da Camisa</th>
 
           <th class="text-center" scope="col">Editar</th>
 
